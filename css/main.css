@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Coloco propiedades al contenedor*/
+.contenedor{
+    background-color: blueviolet;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Se incluyen propiedades del menú*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{ 
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 30px;
+    margin: 30px;
+    justify-content: space-evenly;
+
+}
+/* Se establece pseudoclase sobre el menú de navegación*/
+
+ul li a:hover{
+    background-color: #111;
+    display: block;
+}
+
+header{
+    width: 100%;
+    background-color:darkgray;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img{ 
+    width: 150px;
+    background-color: orange;
+}
+
+/* Se establece pseudoclase sobre el logo que ancla al inicio y cambia de color*/
+
+header .logo img:hover{
+    background-color: white;
+}
+
+main{
+    padding: 20px;
+}
+
+/* Se declara propiedad para la clase titulo*/
+
+.titulo{
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: rgb(211, 177, 177);
+}
+
+/* Se declara propiedad para la clase descripcion*/
+
+.descripcion{
+    text-align: center;
+    font-size: 1.8rem;
+    color: bisque;
+    margin: 20px 0;
+}
+
+/* Se declaran propiedades para la clase imagenes*/
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagen1{
+    justify-content: center;
+    align-items: center;
+}
+
+.i1{
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px;
+    height: 300px;
+    margin: 0px 10px;
+    padding: 10px 10px;
+
+}
+
+.i2{
+    max-width: 100%;
+    max-height: 76%;
+    width: 500px;
+    height: 300px;
+    margin: 15px 10px;
+    padding: 10px 10px;
+
+
+}
+
+.i3{
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px;
+    height: 300px;
+    margin: 10px 5px;
+    padding: 10px 10px;
+
+}
+
+/* Se declaran propiedades a la clase parrafo*/
+
+.parrafo{
+    color: bisque;
+    font-size: 2em;
+    text-align: center;
+}
+
+.p1{
+    font-weight: bold;
+    line-height: 100px;
+    padding-top: 20%;
+    padding: 10px;
+}
+
+/* Se declaran propiedades a la pagina nosotros*/
+
+.nosotros{
+    padding: 10px;
+    margin: 10px;
+}
+
+.nosotrosTitulo{
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.nosotrosContenido{
+    color: azure;
+    font-size: 1.3em;
+    line-height: 70px;
+    text-align: center;
+    padding-bottom: 0%;
+}
+
+
+.nosotrosFoto{
+    width: 75%;
+    max-height: 50%;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+
+.imagenNosotros{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    padding: 20px;
+    margin: 120px;
+}
+
+main{
+    background-color: blueviolet;
+}
+
+/* Se declaran propiedades al id galería ( de imagenes )*/
+
+#galeria .col-lg-4{
+    margin: 0 important!;
+    padding: 25px;
+}
+
+#galeria img{
+    width: 100%;
+    height: 250px;
+}
+
+#galeria img:hover{
+    border: 3px solid white;
+}
+
+/* Se declaran propiedades para el id cardde boostrap*/ 
+
+#card-img img{
+    width: 100%;
+    max-height: 100px;
+    margin: 0 important!;
+    padding: 25px;
+}
+
+.card img:hover{
+    border: 3px solid white;
+}
+
+
+/* Se declaran propiedades para los pie de paginas del index y nosotros*/
+
+footer{
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+}
+
+
+/* Se aplican propiedades de tamaño máximo a las imagenes del footer*/
+
+footer img{
+    width: 50px;
+    height:50px;
+}
+
+footer .contenedorFooter{
+    display: flex;
+    padding: 10px 20px;
+    color: white;
+    
+}
+
+footer .contenedorIzquierdo{
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+}
+
+footer .contenedorIzquierdo h2{
+    line-height: 0.5rem;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+footer .contenedorIzquierdo p{
+    padding: 10px;
+    text-align: left;
+    color: orange;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+footer .contenedorCentral{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    max-width: 30%;
+    padding: 10px;
+    margin: 10px;
+    line-height: 30px;
+}
+
+footer .contenidoCentral{
+    color: orange;
+    max-width: 70%;
+    
+}
+
+footer .contenidoCentral h2{
+    color: white;
+}
+
+footer .contenedorDerecho {
+    padding: 10px;
+    color: white;
+    text-align: left;
+    max-width: 40%;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Se declaran propiedades para la clase entrega de la página propyectos*/
+
+.entrega{
+    font-size: 1rem;
+    color: rgb(185, 168, 162);
+    font-weight: bold;
+}
+
+/* Se declaran propiedades para la clase boton de la pagina de propyectos*/
+
+.boton{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+    border: 1px solid black;
+}
+
+.boton a{
+    text-decoration: none;
+}
+
+
+/* Se declaran los mediaqueries, no logro modificar el cambio en las imagenes*/
+
+@media screen and (max-width: 640px) {
+    header {
+      background: blue;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      max-width: fit-content;
+    }
+  }
+
+@media screen and (max-width:640px){
+    main{
+        background-color: gray;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max width:640px){
+    .imagenes{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:640px){
+    footer .contenedorIzquierdo p{
+         min-width: 100%;
+         color:green;
+    }
+}
+
+@media screen and (max-width:640px){
+    footer .contenidoCentral {
+    
+        min-width: 100%;
+        color: yellow;
+    }
+}
+
+@media screen and ( max-width:640px){
+    footer .contenedorDerecho {
+    
+        min-width: 100%;
+        color: pink;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header nav ul li a{
+      background-color: darkmagenta;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  }
+  
+  @media screen and (min-width: 640px) and (max-width: 1280px) {
+    header {
+      background: red;
+    }
+  }
+  
+  @media screen and (min-width: 640px) and (max-width: 1280px) {
+    main {
+      background: green;
+    }
+  }
+
+  @media screen and (min-width: 640px) and (max-width: 1280px) {
+    imagenes {
+      background: yellow;
+      min-width: 100%;
+    }
+  }
+
+
+
+  
+
